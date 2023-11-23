@@ -6,11 +6,32 @@
 }
 *{
     font-family: 'Giants-Inline';
+    color:#FFFFFF;
 }
 
 .background{
-    background:url(/KakaoTalk_20230126_144233000.jpg);
+    height: 100vh;
+    background:url(/KakaoTalk_20230126_144233000.jpg) center no-repeat;
     background-size:cover;
+    
 }
+.background::before{
+    content:"";
+    opacity:0.5;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-color: #000;
 
-
+}
+body{
+    margin: 0px;
+}
+.box{
+    position: relative;
+}
+img{
+    position: relative;
+}
